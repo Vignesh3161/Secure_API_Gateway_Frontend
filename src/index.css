@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #f5ece5;
+  --bg-secondary: #ffffff;
+  --sidebar-bg: #111111;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --accent-orange: #f15a24;
+  --border-color: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Utilities for the new design */
+@layer utilities {
+  .shadow-soft {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+}
